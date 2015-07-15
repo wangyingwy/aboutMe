@@ -1,0 +1,46 @@
+html {-ms-touch-action: none;  /* 阻止windows Phone 的默认触摸事件 */}
+body {width: 100%; *cursor: default; overflow: hidden;}
+#pageContain{overflow: hidden;}
+.page {display: none; width: 100%; height: 100%; overflow: hidden; position: absolute; top: 0; left: 0;}
+.contain {width: 100%; height: 100%; display: none; position: relative; z-index: 0;}
+.current .contain,.slide .contain {display: block;}
+.current {display: block; z-index: 1;}
+.slide {display: block; z-index: 2;}
+.swipe {display: block; z-index: 3; transition-duration: 0ms !important; -webkit-transition-duration: 0ms !important;}
+.page1{background-color: rgb(186,180,182); text-align: center;}
+.page2{background-color: rgb(106,121,145);}
+.page3{background-color: rgb(175,194,219);}
+.page4{background-color: rgb(208,227,237);}
+.page5{background-color: rgb(183,226,248);}
+#navBar{z-index: 3; position: absolute; top: 50%; right: 5%; -webkit-transform: translate(0,-50%); -moz-transform: translate(0,-50%); -ms-transform: translate(0,-50%); -o-transform: translate(0,-50%); transform: translate(0,-50%);}
+#navBar .active {background: #ccc;}
+#navBar li{-webkit-transition: all 0.7s ease; -moz-transition: all 0.7s ease; -ms-transition: all 0.7s ease; -o-transition: all 0.7s ease; transition: all 0.7s ease; width: 10px; height: 10px; border-radius: 50%; margin-bottom: 5px; cursor: pointer;}
+.page1 img{max-width: 100%; border: 10px solid #dcd5d7; border-radius: 50%; margin-top: 2.5em;}
+.page1 h1{text-align: center; font-size: 4.5em; color: #faf8f9; text-shadow: 1px 2px #aaa3a6, 2px 4px #e0ddde; margin-top: 0.3em;}
+.page1 h3{text-align: center; margin-top: 0.4em; color: #969294; font-size: 1.8em;}
+.page1 p{text-align: center; margin-top: 0.3em; color: #e7e5e6; font-size: 1.2em;}
+.page2 h1{margin-top: 2.3em; font-size: 2em; color: #faf8f9; text-align: center; text-shadow: 1px 2px #505c70, 2px 4px #8294b1;}
+.page2 p{text-align: center; font-size: 1.2em; margin-top: 7em; color: #faf8f9;}
+.page2 .paragraph{width: 80%; margin: 1em auto 0; font-size: 1.5em; color: #ededed;}
+.page3 p{text-align: center; font-size: 1.2em; margin-top: 7em; color: #f3f4f6;}
+.page3 .paragraph{width: 80%; margin: 1em auto 0; font-size: 1.5em; color: #ededed;}
+.page3 .tags{margin: 1em 0;}
+.page3 .tags-item{text-align: center;}
+.page3 span{display: inline-block; padding: 5px 8px; background-color: #5286cb; margin: 5px 4px; color: #f3f4f6; border: 1px solid #5286cb; border-radius: 3px; font-size: 17px;}
+.page4 h1{margin-top: 2.3em; font-size: 2em; color: #f9f9f9; text-align: center; text-shadow: 1px 2px #1d93d2, 2px 4px #a5d9f5;}
+.page4 ul{width: 60%; margin: 3em auto;}
+.page4 ul li{height: 30px; line-height: 30px; background-color: #f9f9f9; padding-left: 10px; border: 2px solid #1d93d2; border-radius: 6px; margin: 8px 0;
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out;
+    -ms-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;}
+.page4 .html{width: 80%;  }
+.page4 .html:hover{width: 90%;}
+.page4 .ps{width: 75%;}
+.page4 .ps:hover{width: 85%;}
+.page4 .js{width: 40%;}
+.page4 .js:hover{width: 50%}
+.page4 .html5{width: 40%;}
+.page4 .html5:hover{width: 50%;}
+.page5 h1{font-size: 5em; text-align: center; margin-top: 3em; color: #f6fafc; text-shadow: 1px 2px #24a0e0, 2px 4px #d7effb;}
